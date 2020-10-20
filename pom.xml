@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<packaging>pom</packaging>
 	<modules>
-		<module>resume-header</module>
+		<module>resume.header</module>
 	</modules>
 
 	<parent>
@@ -58,7 +58,7 @@
 		</dependency>
 		<dependency>
 			<groupId>com.java9.springboot</groupId>
-			<artifactId>resume-header</artifactId>
+			<artifactId>resume.header</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
 			<scope>compile</scope>
 		</dependency>
@@ -70,7 +70,15 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
-		</plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>14</source>
+                    <target>14</target>
+                </configuration>
+            </plugin>
+        </plugins>
 	</build>
 
 </project>
